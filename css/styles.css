@@ -29,6 +29,9 @@ header{
 #barra-buscador > div{
  justify-content: center;
 }
+.menu-3{
+    gap: 20px;
+}
 form {
     display: flex;
     align-items: center;
