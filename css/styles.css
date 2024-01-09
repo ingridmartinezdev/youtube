@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('css/Roboto/26892287593.ttf') format('truetype');
+  }
 *{
     box-sizing: border-box;
     padding: 0;
@@ -8,8 +12,19 @@
 header{
     display:flex;
     justify-content: space-between; 
-    padding: 0px 16px;
     align-items: center;
+    padding: 10px 16px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    gap: 20px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px 90%;
+    max-width: 100%;
 }
 .d-flex{
     display: flex;
@@ -18,7 +33,8 @@ header{
     align-items: center;
 }
 .menu-1 i{
- padding: 10px 8px;
+    padding: 10px 8px;
+    height: 30px;
 }
 #barra-buscador{
     display: grid;
@@ -27,7 +43,7 @@ header{
     width: 30%;
 }
 #barra-buscador > div{
- justify-content: center;
+    justify-content: center;
 }
 .menu-3{
     gap: 20px;
@@ -51,27 +67,30 @@ form > a {
     padding: 8.5px 15px;
 }
 .col-left-img{
-    padding: 10px 12px;
+    padding: 8px 12px;
     border: 1px solid #000;
-    height: 32px;
     border: 1px solid transparent;
+    max-width: 100%;
 }
 .col-left-img:hover{
     background-color: #e5e5e5;
     border-radius: 10px;
 }
-.col-left-img a{
-    padding-right: 10px;
-    
+.col-left-img a {
+    display: flex;
+    align-items: center;
 }
-.container{
-    display: grid;
-    grid-template-columns: 10% 90%;
+.col-left-img > a > i, .col-left-img > a > img {
+    width: 17px;
+}
+.col-left-img a > span {
+    padding-left: 20px;
 }
 .list ul{
     font-size: 11px;
     font-weight: lighter;
     color: #0f0f0f; 
+    list-style: none;
 }
 .list{
     border-bottom: 1px solid #dbdbdb;
@@ -82,12 +101,15 @@ form > a {
     max-width: 100%;
 }
 .list h2{
-    font-size: 12px;
-    padding-left: 12px; 
-    
+    font-size: 13px;
+    padding: 6px 0px 6px 12px;
 }
 .list a{
-    text-decoration: none;
+    text-decoration: none; 
+}
+.logo-suscripciones{
+    border-radius: 50%;
+    width:20px; 
 }
 .second-menu ul{
     display: flex;
@@ -98,7 +120,7 @@ form > a {
     flex-wrap: wrap;
     line-height: 3;
     text-decoration: none;
-    margin: 12px;
+    max-width: 100%;
 }
 .second-menu a{
     font-weight: bold;
@@ -115,9 +137,11 @@ form > a {
     grid-template-columns: repeat(6, 1fr);
     gap: 3px;
     margin-bottom: 22px;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 .container-col-right-video{
-    padding: 32px 0px;
+    padding: 26px 0px;
 }
 .img-video{
     background-color: transparent;
@@ -125,6 +149,7 @@ form > a {
     height: 155px;
     width: 270px;
     object-fit: cover;
+    max-width: 100%;
 }
 .img-shorts{
     height: 320px;
@@ -132,6 +157,7 @@ form > a {
     object-fit: cover;
     background-color: transparent;
     border-radius: 10px;
+    max-width: 100%;
 }
 .shorts-col-right{
     display: grid;
@@ -150,11 +176,31 @@ form > a {
 .video-text{
     display: flex;
     padding-right: 24px;
+    padding-top: 5px;
     width: 100%;
     gap: 10px;
     overflow: hidden;
     line-height: 1.5;
+    max-width: 100%;
 }
+.logo-users{
+    border-radius: 50%;
+    width:25px;   
+}
+.shorts h2{
+    font-size: 18px;
+}
+.shorts-title{
+    display: flex;
+    padding-bottom: 20px;
+}
+.width-shorts{
+    width: 165px;
+    line-height: 1.5;
+    max-width: 100%;
+}
+
+
 
 
 
